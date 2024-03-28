@@ -3,7 +3,7 @@
 // GitHub repository information
 $repositoryOwner = "martial-sudo";
 $repositoryName = "martial-sudo.github.io";
-$branchName = "uploads"; // or any other branch
+$branchName = "main"; // or any other branch
 
 // File upload handling
 if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_FILES["fileToUpload"])) {
@@ -15,7 +15,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_FILES["fileToUpload"])) {
         $filePath = $file["tmp_name"];
 
         // Destination file path in the repository
-        $destinationPath = "uploads/" . $file["name"];
+        $destinationPath = "martial-sudo.github.io/uploads/" . $file["name"];
 
         // Git commands to add and commit the file
         $gitCommands = [
